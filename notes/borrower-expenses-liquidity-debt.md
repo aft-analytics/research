@@ -32,7 +32,7 @@ Local: [`papers/hansen_2022_cebi_high_cost_loans.pdf`](../papers/hansen_2022_ceb
 
 <a id="4"></a>
 **[4]** Goldfayn, Olga, and Nathanael Vellekoop. “The Role of Personality Traits in Household Loan Expectations and Borrowing Constraints.” SAFE Working Paper No. 381, February 2023.  
-Local: download blocked here — see [`papers/goldfayn_vellekoop_2023_safe381.DOWNLOAD.txt`](../papers/goldfayn_vellekoop_2023_safe381.DOWNLOAD.txt) · [IDEAS](https://ideas.repec.org/p/zbw/safewp/381.html) · [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4359548)
+Local: [`papers/goldfayn_vellekoop_2023_safe381.pdf`](../papers/goldfayn_vellekoop_2023_safe381.pdf) · [IDEAS](https://ideas.repec.org/p/zbw/safewp/381.html) · [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4359548)
 
 <a id="5"></a>
 **[5]** Federal Reserve Bank of New York. “When Debts Compete, Which Wins?” *Liberty Street Economics*, 2017.  
