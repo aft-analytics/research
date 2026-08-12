@@ -9,7 +9,7 @@
 | Program | Use |
 |---------|-----|
 | **ACS** | Income, housing tenure, demographics for market/spectrum overlays |
-| **BPS** ([permits](https://www.census.gov/permits)) | New residential permits by place/county/CBSA; HUD [SOCDS](hud-socds-permits.md) is a query UI over the same |
+| **BPS** ([census.gov/permits](https://www.census.gov/permits) — ASCII/Excel primary) | New residential permits by place/county/CBSA; HUD [SOCDS](hud-socds-permits.md) is a query UI over the same; FRED redistributes series only |
 | **CBP** / **ABS** / Economic Census | Establishment counts by industry/geo |
 | **Business Formation Statistics** | New-business application trends |
 | **Population / housing estimates**, **SAIPE** | Local size & poverty |

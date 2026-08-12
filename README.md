@@ -8,4 +8,4 @@ Notes and working papers.
 
 ## Data sources
 
-- [Inventory](data-sources/README.md) (starts with Statista)
+- [data-sources/README.md](data-sources/README.md) — explore map + evaluated sources table
