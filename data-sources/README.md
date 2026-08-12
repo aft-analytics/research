@@ -11,8 +11,8 @@ Inventory of datasets / data products we might access for credit, market, overla
 | Building permits | Local activity, renovation, investor vs owner signals | [BuildZoom / Gryd](buildzoom.md); [SATT residential (Databricks)](satt-building-permits.md); Census BPS ([census.md](census.md) / [data.gov](data-gov.md)); [HUD SOCDS](hud-socds-permits.md); [FRED housing;permits](fred-housing-permits.md); [WCRER WA](wcrer-permits.md); [NYC Open Data](nyc-open-data.md) (DOB); [Austin permits](austin-permits.md); Shovels-class peers; other city portals |
 | Insurance | Disaster / flood / property risk overlays | OpenFEMA NFIP + disasters ([data.gov](data-gov.md)); NAIC / DOI; hazard vendors |
 | US companies / entities | Firm graph for LLC ownership, employers, merchants | [GovFiles](govfiles.md); [SOS bulk by state](sos-bulk-by-state.md); [CompanyData](companydata.md); OpenCorporates; SEC EDGAR |
-| USPS address changes | Fraud / instability (NCOA moves) | USPS NCOA<sup>Link</sup> / AIS (licensed); not free bulk |
-| Financial institutions | Better parse of banks / CUs / brokers in txn text | FDIC institutions; NCUA credit unions; FINRA BrokerCheck data |
+| USPS address changes | Fraud / instability (NCOA moves); FI address hygiene | [Address / USPS / Melissa](address-usps.md); NCOA<sup>Link</sup>/AIS licensed — no free dump |
+| Financial institutions | Banks, CUs, brokers — lists, branches, financials; txn string match | [US FI DIY](us-banks.md); [FI vendors](fi-data-vendors.md); [address hygiene](address-usps.md) |
 | Loan tapes | Fit external tapes into Runway | dv01 (talk next week); other ABS/warehouse tape providers |
 | Credit & mortgage public filings | Book / market benchmarks | HMDA; FFIEC/FDIC call reports |
 | Labor / income / local economy | Spectrum / market mix overlays | [Census hub](census.md); [IPUMS USA](ipums-usa.md) (ACS PUMS microdata); BLS; IRS SOI ZIP |
@@ -50,6 +50,9 @@ Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/br
 | [ATTOM](attom.md) | Assessor + recorder/deed plant; API + Databricks | Likely yes — quote/trial | Baseline ownership overlay vendor. |
 | [County recorder DIY](county-recorder-diy.md) | Portal pattern (often vendor-hosted) | Mild | No national bulk; use with deeds-by-state. |
 | [U.S. Title Records](us-title-records.md) | Per-report human title abstractor | Exception only | $29–275+/report; not a deed dump. |
+| [US FI DIY (us-banks.md)](us-banks.md) | Banks + CUs + brokers — federal/public stack | Yes | FDIC/NIC/SOD/CDR; NCUA 5300; FINRA firm list/API |
+| [FI data vendors](fi-data-vendors.md) | Commercial FI directories / branch APIs | Maybe | CREHQ, Accuity, S&P/Moody’s; DIY usually enough |
+| [Address / USPS / Melissa](address-usps.md) | Standardize/verify; NCOA licensed | Yes for hygiene | Melissa known path; no free USPS dump |
 
 ## Backlog (not yet evaluated)
 
@@ -57,8 +60,6 @@ Add a row (and optional `data-sources/<name>.md`) as each source gets a pass:
 
 - More states from Forbes list (FL, GA, CA SOS path, IL live URL)
 - Municipal list from Forbes companion (90 cities) + [NYC](nyc-open-data.md) / [Austin](austin-permits.md)
-- USPS NCOA (access + cost)
 - OpenCorporates (vs GovFiles / DIY SOS bulk)
-- NCUA (alongside FDIC from data.gov)
 - dv01 loan tapes
 - Pull primary URLs for BPS / OpenFEMA / HMDA / FHFA / IRS SOI ZIP into short notes
