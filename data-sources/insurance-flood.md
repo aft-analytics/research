@@ -42,16 +42,16 @@ Hubs: [OpenFEMA data sets](https://www.fema.gov/about/openfema/data-sets) · [AP
 
 **Redaction reality (policies/claims):** PII stripped; location ≈ tract + ZIP + 0.1° lat/lon. Points cluster; may fall in wrong county if you trust lat/lon alone — FEMA says use state/county fields for aggregation.
 
-## Light vendor / hazard peers (snowball, not a bake-off)
+## Vendor / hazard peers (optional further diligence)
 
 | Vendor | One-liner |
 |--------|-----------|
 | **First Street** | Property-level climate risk (flood / wildfire / wind / heat…); API + portfolio suite — licensed |
 | **Cotality (CoreLogic) Climate & Hazard** | Institutional hazard / climate analytics on parcel plant — see [property-data-vendors.md](property-data-vendors.md) |
 | **Verisk / AIR, Moody’s RMS** | Cat models & scores (insurer/lender grade) — enterprise |
-| **ATTOM / peers** | Some hazard appends on property APIs — confirm vs buying Cotality/First Street dedicated | 
+| **ATTOM / peers** | Some hazard appends on property APIs — confirm vs Cotality/First Street if buying dedicated scores |
 
-**Still vendor-only (or near-only):** true **address-matched** NFIP/private flood policy status, carrier quotes, forward climate damage/AAL at structure, wildfire/quake underwriting scores, nationwide private-flood market files. DIY does **not** replace those.
+**Vendor-only (or near-only) products:** true **address-matched** NFIP/private flood policy status, carrier quotes, forward climate damage/AAL at structure, wildfire/quake underwriting scores, nationwide private-flood market files. DIY does **not** replace those.
 
 ## Related
 

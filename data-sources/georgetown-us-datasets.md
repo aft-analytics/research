@@ -2,7 +2,7 @@
 
 [guides.library.georgetown.edu/datasets/us](https://guides.library.georgetown.edu/datasets/us)
 
-Academic **numeric / statistics** pathfinder (not GIS, not SOS bulk). Thin but points at federal hubs we already care about.
+Academic **numeric / statistics** pathfinder (not GIS, not SOS bulk). Mostly points at federal hubs already covered elsewhere.
 
 ## Links on the page
 

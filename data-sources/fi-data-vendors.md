@@ -1,6 +1,6 @@
 # FI reference data vendors (banks / CUs / brokers)
 
-Separate from federal DIY ([us-banks.md](us-banks.md)). Snowball: BankFind alternatives → branch APIs → classic bank directories / risk terminals.
+Separate from federal DIY ([us-banks.md](us-banks.md)). Surveyed peers: BankFind alternatives → branch APIs → classic bank directories / risk terminals.
 
 | Vendor | What | Can for lists/branches/stats? | Pricing signal | Fit |
 |--------|------|-------------------------------|----------------|-----|

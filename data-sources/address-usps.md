@@ -9,7 +9,7 @@
 
 **For FI work:** FDIC / NCUA / FINRA give raw addresses → run Melissa (or peer) normalize → match. Move detection for fraud overlays → licensed NCOA path, not BankFind.
 
-## NCOA<sup>Link</sup> (deeper)
+## NCOA<sup>Link</sup> (licensed path)
 
 Hub: [PostalPro NCOALink](https://postalpro.usps.com/mailing-and-shipping-services/ncoalink) — official licensee lists + docs.
 

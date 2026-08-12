@@ -10,7 +10,7 @@
 | Property assessment / parcel counts | e.g. [7vem-aaz7](https://data.ny.gov/Government-Finance/Property-Assessment-Data-from-Local-Assessment-Rol/7vem-aaz7), [tnwc-mx3q](https://data.ny.gov/Government-Finance/Parcel-Counts-By-Type-By-Municipality-Beginning-Ro/tnwc-mx3q) | Local tax-roll style aggregates — not statewide deed records |
 | SONYMA loans / target areas | [22ew-dxez](https://data.ny.gov/Housing-Development/State-of-New-York-Mortgage-Agency-SONYMA-Loans-Pur/22ew-dxez) | Housing program loans, not consumer credit |
 
-## Weak / missing here
+## Not on this portal
 
 - Statewide **deeds** / recorder microdata  
 - Parcel-level **building permits** (only thin local/code-report scraps)  

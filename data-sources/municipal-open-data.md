@@ -4,6 +4,6 @@
 
 **Verdict:** Yes as **seed map** only — same caveats as state Forbes list (stale URLs). Value is city **permits / parcels / assessments**, not national coverage.
 
-**Already evaluated examples:** [NYC Open Data](nyc-open-data.md) (DOB, ACRIS, PLUTO); [Austin permits](austin-permits.md). Pattern: Socrata/CKAN/ArcGIS → search permit, parcel, assessor, building.
+**Documented examples:** [NYC Open Data](nyc-open-data.md) (DOB, ACRIS, PLUTO); [Austin permits](austin-permits.md). Pattern: Socrata/CKAN/ArcGIS → search permit, parcel, assessor, building.
 
-**How to use:** When we need a metro, open that city’s portal (or Forbes URL → redirect) and pull parcel-grain permits/ownership-adjacent files. Don’t inventory all 90 upfront — pull on demand; DIY national permits = vendors ([buildzoom.md](buildzoom.md)).
+**How to use:** When a metro matters, open that city’s portal (or Forbes URL → redirect) and pull parcel-grain permits/ownership-adjacent files. National parcel permits → vendors ([buildzoom.md](buildzoom.md)), not a full 90-city scrape.

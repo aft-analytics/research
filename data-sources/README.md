@@ -1,25 +1,27 @@
 # Data sources
 
-Datasets / data products we might access for credit, market, overlays, and fraud. Prefer usable grain (ZIP / parcel / loan / person / firm) and a clear access path.
+Accessible datasets / data products for credit, market, overlays, and fraud. Prefer usable grain (ZIP / parcel / loan / person / firm) and a clear access path.
 
-Sections: [What to explore](#what-to-explore-from-the-ask--ideas) · [Evaluated sources table](#evaluated)
+**Status:** Inventory for the original ask (Statista dig + comprehensive accessible list across public records, housing, permits, insurance, entities, address/USPS, FIs, loan tapes, mortgage public filings, labor/income) is **complete**. Notes below map each domain to evaluated sources. Residual vendor depth (e.g. multi-plant bake-offs, Shovels quote, First Street / NAIC deep dives, LLC→articles join engineering, EDGAR firm-universe builds, extra NCOA commercial detail) is **optional further diligence**, not unfinished ask work.
 
-## What to explore (from the ask + ideas)
+Sections: [Coverage by domain](#coverage-by-domain) · [Evaluated sources table](#evaluated)
 
-| Domain | Why | Examples to dig |
+## Coverage by domain
+
+| Domain | Why | Evaluated notes |
 |--------|-----|-----------------|
 | Public records / deeds | Verify homeownership; LLC + articles of incorp when name isn’t on title | [Deeds DIY vs plant](deeds-by-state.md); [national property / deed vendors](property-data-vendors.md) (ATTOM, CoreLogic, DataTree, …); [ATTOM](attom.md); [county recorder DIY](county-recorder-diy.md); [USTR abstractor](us-title-records.md) |
 | Housing & valuations | Collateral / housing-status signal; market stress | ACS; [FHFA HPI](fhfa-hpi.md); [Zillow Research](zillow-research.md); GIS parcels ([Purdue GIS guide](purdue-gis-by-state.md)); [property-data-vendors.md](property-data-vendors.md) |
-| Building permits | Local activity, renovation, investor vs owner signals | [BuildZoom / Gryd](buildzoom.md); [SATT residential (Databricks)](satt-building-permits.md); Census BPS ([census.md](census.md)); [HUD SOCDS](hud-socds-permits.md); [FRED housing;permits](fred-housing-permits.md); [WCRER WA](wcrer-permits.md); [NYC Open Data](nyc-open-data.md) (DOB); [Austin permits](austin-permits.md); [municipal portals map](municipal-open-data.md); Shovels-class peers |
-| Insurance | Disaster / flood / property risk overlays | [OpenFEMA + NFHL DIY](insurance-flood.md); [data.gov](data-gov.md) finder; First Street / Cotality hazard (vendor) |
-| US companies / entities | Firm graph for LLC ownership, employers, merchants | [GovFiles](govfiles.md); [SOS bulk by state](sos-bulk-by-state.md); [CompanyData](companydata.md); [OpenCorporates](opencorporates.md); SEC EDGAR |
+| Building permits | Local activity, renovation, investor vs owner signals | [BuildZoom / Gryd](buildzoom.md); [SATT residential (Databricks)](satt-building-permits.md); Census BPS ([census.md](census.md)); [HUD SOCDS](hud-socds-permits.md); [FRED housing;permits](fred-housing-permits.md); [WCRER WA](wcrer-permits.md); [NYC Open Data](nyc-open-data.md) (DOB); [Austin permits](austin-permits.md); [municipal portals map](municipal-open-data.md) |
+| Insurance | Disaster / flood / property risk overlays | [OpenFEMA + NFHL DIY](insurance-flood.md); [data.gov](data-gov.md) finder; light vendor peers noted in insurance-flood |
+| US companies / entities | Firm graph for LLC ownership, employers, merchants | [GovFiles](govfiles.md); [SOS bulk by state](sos-bulk-by-state.md); [CompanyData](companydata.md); [OpenCorporates](opencorporates.md) |
 | USPS address changes | Fraud / instability (NCOA moves); FI address hygiene | [Address / USPS / Melissa + NCOA](address-usps.md) — licensed, no free dump |
 | Financial institutions | Banks, CUs, brokers — lists, branches, financials; txn string match | [US FI DIY](us-banks.md); [FI vendors](fi-data-vendors.md); [address hygiene](address-usps.md) |
-| Loan tapes | Fit external tapes into Runway | [dv01](dv01.md) (evaluated — pending use-case OK + 12‑mo terms) |
+| Loan tapes | Fit external tapes into Runway | [dv01](dv01.md) (evaluated; commercial / use-case terms gated) |
 | Credit & mortgage public filings | Book / market benchmarks | [HMDA DIY](hmda.md); call reports already in [us-banks.md](us-banks.md) / FFIEC |
 | Labor / income / local economy | Spectrum / market mix overlays | [Census hub](census.md); [IPUMS USA](ipums-usa.md); [BLS](bls.md); [IRS SOI ZIP](irs-soi-zip.md) |
 
-Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/broker string detection (improve with institution lists above). Research papers live under `notes/` / `papers/`, not here.
+Also available outside this folder: US location datasets for txn geo; bank/CU/broker string detection improves with the FI lists above. Research papers live under `notes/` / `papers/`, not here.
 
 ## Evaluated
 
@@ -36,8 +38,8 @@ Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/br
 | [NYC Open Data](nyc-open-data.md) | City building/housing microdata | Yes for NYC | DOB CoO/permits, ACRIS, PLUTO — parcel grain; NYC only. |
 | [Austin permits](austin-permits.md) | City issued construction permits (Socrata) | Yes for Austin | ~2.4M rows, daily; address/TCAD/lat-lon; BLDS; not ownership. |
 | [State open data portals](state-open-data-portals.md) | Forbes 2018 50-state (+DC/PR) list | Yes as map | Stale links; mix of catalogs / transparency / GIS. |
-| [State portals spot-check](state-portals-spotcheck.md) | Live VA + peers + FL/GA/CA/IL | Yes | VA SCC; CT/NY/CO/OR/PA; **FL Sunbiz free SFTP**; GA paid FTP; CA/IL still weak |
-| [Municipal open-data map](municipal-open-data.md) | Forbes 2018 90-city portal list | Yes as map | Seed only; pull city on demand; NYC + Austin done |
+| [State portals spot-check](state-portals-spotcheck.md) | Live VA + peers + FL/GA/CA/IL | Yes | VA SCC; CT/NY/CO/OR/PA; **FL Sunbiz free SFTP**; GA paid FTP; CA/IL weak for free SOS dumps |
+| [Municipal open-data map](municipal-open-data.md) | Forbes 2018 90-city portal list | Yes as map | Seed map; pull cities as needed (examples: NYC, Austin) |
 | [Purdue GIS by state](purdue-gis-by-state.md) | LibGuide of state GIS clearinghouses | Yes for parcels/geo | PASDA, MassGIS, AGRC, TNRIS, VGIN…; not SOS entities. |
 | [Georgetown US datasets](georgetown-us-datasets.md) | Stats pathfinder (Census, data.gov, DC) | Mild | Mostly hubs we already have; some licensed-only. |
 | [Data USA](datausa.md) | Viz/API over public US gov aggregates | Mild | Place/industry reports; not firms/deeds. Prefer Census primary. |
@@ -63,4 +65,4 @@ Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/br
 | [Zillow Research](zillow-research.md) | ZHVI / ZORI / inventory CSVs | Yes for market overlays | Free CDN CSVs; monthly ZIP-ish; not deeds/AVM plant |
 | [IRS SOI ZIP](irs-soi-zip.md) | Tax-return income stats by ZIP × AGI | Yes | Free; lagged tax years; spectrum / income mix |
 | [BLS](bls.md) | LAUS / QCEW / CES (+ API) | Yes | County unemployment & industry wages; aggregates only |
-| [dv01](dv01.md) | Loan-tape cracker / ABS analytics | Yes — pending commercial | ~$5/mo basic signal + 12‑mo expectation; use-case OK still needed; strong whitepapers |
+| [dv01](dv01.md) | Loan-tape cracker / ABS analytics | Yes — commercial gated | ~$5/mo basic signal + 12‑mo expectation; use-case OK + written terms before buy; strong whitepapers |

@@ -1,6 +1,6 @@
 # National property / deed data vendors
 
-Minimal can/cannot pass for **national ownership / assessor / deed overlays**. Peers surveyed: ATTOM, Cotality/CoreLogic, DataTree, ICE/Black Knight, BatchData, Regrid, Melissa, RentCast, RealEstateAPI, TovoData, HouseCanary, LightBox, Zillow, etc. Stopped when new names were mostly consumer people-search, tax-lien tools, or aggregators.
+Minimal can/cannot pass for **national ownership / assessor / deed overlays**. Peers surveyed: ATTOM, Cotality/CoreLogic, DataTree, ICE/Black Knight, BatchData, Regrid, Melissa, RentCast, RealEstateAPI, TovoData, HouseCanary, LightBox, Zillow, etc. Beyond that list, names were mostly consumer people-search, tax-lien tools, or aggregators (not additional plant diligence owed for the inventory).
 
 **Different lane (not plant peers):** [U.S. Title Records](us-title-records.md) and AFX Research — per-order human abstractors / title reports (API = order status + PDF, not bulk ownership files). FastLien = tax-lien auction SaaS ($49/mo) — skip for ownership overlays.
 

@@ -42,7 +42,7 @@ Also: **local** building permits & parcels (VA Beach, Loudoun, Fairfax, etc.) �
 |-------|-----------|-----------|
 | **FL** | [Sunbiz Data Downloads](https://dos.fl.gov/sunbiz/other-services/data-downloads/) → SFTP `sftp.floridados.gov` (public creds on page); daily + **quarterly full** corp/LLC/LP | **Yes — free official bulk** (Pierce had FOIA-ish; treat as free SFTP) |
 | **GA** | [Bulk Corporations Data](https://georgia.gov/bulk-corporations-data) | **Paid FTP** — $100 acct + $1k one-time or $500/mo (already in [sos-bulk](sos-bulk-by-state.md)) |
-| **CA** | [data.ca.gov](https://data.ca.gov) | Still **no** SOS entity dump in catalog; corp/tax *stats* only — CA remains DIY gap → vendor |
+| **CA** | [data.ca.gov](https://data.ca.gov) | **No** SOS entity dump in catalog; corp/tax *stats* only — use vendor / paid SOS for CA entities |
 | **IL** | Forbes `data.illinois.gov` stale; try [data.illinois.gov](https://data.illinois.gov) / IL SOS business search | No reliable free statewide entity dump found; **Business Data Transparency** products exist but not a clean open dump — verify before counting |
 
 ## Weak / wrong for our ask (sampled)
@@ -56,4 +56,4 @@ Also: **local** building permits & parcels (VA Beach, Loudoun, Fairfax, etc.) �
 
 ## Takeaway
 
-Prioritize portals that already publish **entity master files** (VA SCC, CT, NY, CO, OR, PA, **FL Sunbiz**) + **NJ permits** + paid **GA FTP** + city portals ([NYC](nyc-open-data.md)). **CA/IL** still weak for free SOS dumps. Use Forbes list as seeds; re-verify URL and search `corporation` / `business entity` / `permit` / `parcel` before counting a state as covered.
+Strongest free **entity master files** found: VA SCC, CT, NY, CO, OR, PA, **FL Sunbiz**; plus **NJ permits**, paid **GA FTP**, and city portals ([NYC](nyc-open-data.md)). **CA/IL** are weak for free SOS dumps (vendor / DIY stitch). Forbes list = seed URLs; re-verify and search `corporation` / `business entity` / `permit` / `parcel` before treating a stale link as coverage.

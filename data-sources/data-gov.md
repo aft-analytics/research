@@ -2,7 +2,7 @@
 
 [catalog.data.gov](https://catalog.data.gov/) — GSA metadata index (~550k federal/state/local datasets). **Finder, not a warehouse:** follow through to agency downloads/APIs. Search API: `api.gsa.gov/technology/datagov/v4` (needs api.data.gov key).
 
-## Fit for our domains (federal hits worth chasing)
+## Fit for our domains (federal hits)
 
 | Domain | On data.gov / linked agencies | Notes |
 |--------|-------------------------------|--------|
@@ -14,7 +14,7 @@
 | Banks / CUs | **FDIC** institutions (+ NCUA outside/near catalog) | Txn string matching |
 | Small-business credit | **SBA** 7(a)/504 & disaster loan reports | Portfolio research, not consumer |
 
-## Weak / absent on data.gov for our ask
+## Weak / absent on data.gov (catalog limits)
 
 - Full **SOS entity** registries (state portals / [GovFiles](govfiles.md) / [SOS bulk](sos-bulk-by-state.md))
 - **Deeds / assessor** national files (county / commercial)
