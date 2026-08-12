@@ -6,4 +6,4 @@
 
 **Pricing:** Contact-sales (billed by API “reports” / property returns). Property Navigator list ~$499/yr; API/bulk custom.
 
-**Useful for us?** **Yes** — baseline for ownership / deed overlays. Peers: [property-data-vendors.md](property-data-vendors.md). DIY framing: [deeds-by-state.md](deeds-by-state.md).
+**Useful for us?** **Yes** — one of several national ownership / deed plant options. Peers: [property-data-vendors.md](property-data-vendors.md). DIY framing: [deeds-by-state.md](deeds-by-state.md).

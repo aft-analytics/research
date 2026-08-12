@@ -21,7 +21,7 @@
 
 ## Commercial shortlist
 
-See **[property-data-vendors.md](property-data-vendors.md)** (ATTOM baseline + snowballed peers). Per-report abstractors: [us-title-records.md](us-title-records.md).
+See **[property-data-vendors.md](property-data-vendors.md)** (ATTOM, CoreLogic/Cotality, DataTree, and peers). Per-report abstractors: [us-title-records.md](us-title-records.md).
 
 ## Related
 

@@ -2,20 +2,20 @@
 
 Datasets / data products we might access for credit, market, overlays, and fraud. Prefer usable grain (ZIP / parcel / loan / person / firm) and a clear access path.
 
-Sections: [What to explore](#what-to-explore-from-the-ask--ideas) · [Evaluated sources table](#evaluated) · [Backlog](#backlog-blocked-only)
+Sections: [What to explore](#what-to-explore-from-the-ask--ideas) · [Evaluated sources table](#evaluated)
 
 ## What to explore (from the ask + ideas)
 
 | Domain | Why | Examples to dig |
 |--------|-----|-----------------|
-| Public records / deeds | Verify homeownership; LLC + articles of incorp when name isn’t on title | [Deeds DIY vs plant](deeds-by-state.md); [property vendors vs ATTOM](property-data-vendors.md); [ATTOM](attom.md); [county recorder DIY](county-recorder-diy.md); [USTR abstractor](us-title-records.md) |
+| Public records / deeds | Verify homeownership; LLC + articles of incorp when name isn’t on title | [Deeds DIY vs plant](deeds-by-state.md); [national property / deed vendors](property-data-vendors.md) (ATTOM, CoreLogic, DataTree, …); [ATTOM](attom.md); [county recorder DIY](county-recorder-diy.md); [USTR abstractor](us-title-records.md) |
 | Housing & valuations | Collateral / housing-status signal; market stress | ACS; [FHFA HPI](fhfa-hpi.md); [Zillow Research](zillow-research.md); GIS parcels ([Purdue GIS guide](purdue-gis-by-state.md)); [property-data-vendors.md](property-data-vendors.md) |
 | Building permits | Local activity, renovation, investor vs owner signals | [BuildZoom / Gryd](buildzoom.md); [SATT residential (Databricks)](satt-building-permits.md); Census BPS ([census.md](census.md)); [HUD SOCDS](hud-socds-permits.md); [FRED housing;permits](fred-housing-permits.md); [WCRER WA](wcrer-permits.md); [NYC Open Data](nyc-open-data.md) (DOB); [Austin permits](austin-permits.md); [municipal portals map](municipal-open-data.md); Shovels-class peers |
 | Insurance | Disaster / flood / property risk overlays | [OpenFEMA + NFHL DIY](insurance-flood.md); [data.gov](data-gov.md) finder; First Street / Cotality hazard (vendor) |
 | US companies / entities | Firm graph for LLC ownership, employers, merchants | [GovFiles](govfiles.md); [SOS bulk by state](sos-bulk-by-state.md); [CompanyData](companydata.md); [OpenCorporates](opencorporates.md); SEC EDGAR |
 | USPS address changes | Fraud / instability (NCOA moves); FI address hygiene | [Address / USPS / Melissa + NCOA](address-usps.md) — licensed, no free dump |
 | Financial institutions | Banks, CUs, brokers — lists, branches, financials; txn string match | [US FI DIY](us-banks.md); [FI vendors](fi-data-vendors.md); [address hygiene](address-usps.md) |
-| Loan tapes | Fit external tapes into Runway | [dv01](dv01.md) (blocked — vendor meeting); other ABS/warehouse tape providers |
+| Loan tapes | Fit external tapes into Runway | [dv01](dv01.md) (evaluated — pending use-case OK + 12‑mo terms) |
 | Credit & mortgage public filings | Book / market benchmarks | [HMDA DIY](hmda.md); call reports already in [us-banks.md](us-banks.md) / FFIEC |
 | Labor / income / local economy | Spectrum / market mix overlays | [Census hub](census.md); [IPUMS USA](ipums-usa.md); [BLS](bls.md); [IRS SOI ZIP](irs-soi-zip.md) |
 
@@ -49,8 +49,8 @@ Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/br
 | [WCRER permits/completions](wcrer-permits.md) | UW WA toolkit: BPS permits + OFM completions | Mild — WA only | County/place Excel; completions add-on; not national/parcel. |
 | [FRED housing;permits](fred-housing-permits.md) | ~4k FRED series (Census BPS redistributed) | Mild | Easy state/MSA monthly API; prefer BPS/SOCDS for place/county. |
 | [Deeds DIY vs plant](deeds-by-state.md) | Framing: county portals vs national plants | Yes as map | DIY for spot checks; plant for overlays; DC ROD + NYC ACRIS examples. |
-| [Property data vendors](property-data-vendors.md) | ATTOM + snowballed national peers | Yes — shortlist | DataTree/Cotality closest plants; BatchData/Regrid/Melissa self-serve-ish; USTR/AFX abstractor lane. |
-| [ATTOM](attom.md) | Assessor + recorder/deed plant; API + Databricks | Likely yes — quote/trial | Baseline ownership overlay vendor. |
+| [Property data vendors](property-data-vendors.md) | National property / deed plants (ATTOM, CoreLogic, DataTree, …) | Yes — shortlist | DataTree/Cotality/ATTOM closest plants; BatchData/Regrid/Melissa self-serve-ish; USTR/AFX abstractor lane. |
+| [ATTOM](attom.md) | Assessor + recorder/deed plant; API + Databricks | Likely yes — quote/trial | Peer plant option; see vendor shortlist. |
 | [County recorder DIY](county-recorder-diy.md) | Portal pattern (often vendor-hosted) | Mild | No national bulk; use with deeds-by-state. |
 | [U.S. Title Records](us-title-records.md) | Per-report human title abstractor | Exception only | $29–275+/report; not a deed dump. |
 | [US FI DIY (us-banks.md)](us-banks.md) | Banks + CUs + brokers — federal/public stack | Yes | FDIC/NIC/SOD/CDR; NCUA 5300; FINRA firm list/API |
@@ -63,8 +63,4 @@ Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/br
 | [Zillow Research](zillow-research.md) | ZHVI / ZORI / inventory CSVs | Yes for market overlays | Free CDN CSVs; monthly ZIP-ish; not deeds/AVM plant |
 | [IRS SOI ZIP](irs-soi-zip.md) | Tax-return income stats by ZIP × AGI | Yes | Free; lagged tax years; spectrum / income mix |
 | [BLS](bls.md) | LAUS / QCEW / CES (+ API) | Yes | County unemployment & industry wages; aggregates only |
-| [dv01](dv01.md) | Loan-tape cracker / ABS analytics | Blocked — meeting | Commercial; wait for vendor talk before peers |
-
-## Backlog (blocked only)
-
-- [dv01](dv01.md) — wait for vendor meeting (then pricing / sample schema / peers)
+| [dv01](dv01.md) | Loan-tape cracker / ABS analytics | Yes — pending commercial | ~$5/mo basic signal + 12‑mo expectation; use-case OK still needed; strong whitepapers |

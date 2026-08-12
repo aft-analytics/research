@@ -66,7 +66,7 @@ Dicts: [MLAR 2018+](https://ffiec.cfpb.gov/documentation/publications/modified-l
 
 - **Bank / CU call reports, NIC, SOD, NCUA 5300, FINRA BD lists:** already in [us-banks.md](us-banks.md) / [fi-data-vendors.md](fi-data-vendors.md). HMDA LEI overlays market activity; call reports overlay balance-sheet — different jobs.
 - **FHFA HPI / Zillow:** house-price market context — [fhfa-hpi.md](fhfa-hpi.md), [zillow-research.md](zillow-research.md).
-- **Loan tapes (dv01, warehouse):** performance / tape fields — [dv01.md](dv01.md) (blocked on meeting); not HMDA.
+- **Loan tapes (dv01, warehouse):** performance / tape fields — [dv01.md](dv01.md) (evaluated — pending commercial / use-case OK); not HMDA.
 
 ## Related
 
