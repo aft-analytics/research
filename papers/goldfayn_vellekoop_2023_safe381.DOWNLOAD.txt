@@ -1,0 +1,4 @@
+SAFE WP 381: EconStor/SSRN blocked by bot-check from this environment.
+Download manually:
+https://ideas.repec.org/p/zbw/safewp/381.html
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4359548
