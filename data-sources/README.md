@@ -6,8 +6,8 @@ Inventory of datasets / data products we might access for credit, market, overla
 
 | Domain | Why | Examples to dig |
 |--------|-----|-----------------|
-| Public records / deeds | Verify homeownership; LLC + articles of incorp when name isn’t on title | County recorder/assessor; DataTree / First American / ATTOM / CoreLogic-class deed feeds |
-| Housing & valuations | Collateral / housing-status signal; market stress | ACS, Zillow/FHFA indexes; GIS parcels ([Purdue GIS guide](purdue-gis-by-state.md)); deed vendors |
+| Public records / deeds | Verify homeownership; LLC + articles of incorp when name isn’t on title | [Deeds DIY vs plant](deeds-by-state.md); [property vendors vs ATTOM](property-data-vendors.md); [ATTOM](attom.md); [county recorder DIY](county-recorder-diy.md); [USTR abstractor](us-title-records.md) |
+| Housing & valuations | Collateral / housing-status signal; market stress | ACS, Zillow/FHFA indexes; GIS parcels ([Purdue GIS guide](purdue-gis-by-state.md)); [property-data-vendors.md](property-data-vendors.md) |
 | Building permits | Local activity, renovation, investor vs owner signals | [BuildZoom / Gryd](buildzoom.md); [SATT residential (Databricks)](satt-building-permits.md); Census BPS ([census.md](census.md) / [data.gov](data-gov.md)); [HUD SOCDS](hud-socds-permits.md); [FRED housing;permits](fred-housing-permits.md); [WCRER WA](wcrer-permits.md); [NYC Open Data](nyc-open-data.md) (DOB); [Austin permits](austin-permits.md); Shovels-class peers; other city portals |
 | Insurance | Disaster / flood / property risk overlays | OpenFEMA NFIP + disasters ([data.gov](data-gov.md)); NAIC / DOI; hazard vendors |
 | US companies / entities | Firm graph for LLC ownership, employers, merchants | [GovFiles](govfiles.md); [SOS bulk by state](sos-bulk-by-state.md); [CompanyData](companydata.md); OpenCorporates; SEC EDGAR |
@@ -45,12 +45,16 @@ Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/br
 | [SATT residential permits](satt-building-permits.md) | Databricks Marketplace permit share (residential) | Maybe — sample | ~300K active projects; weekly / 6-wk window; paid by request ($199–$1,999+/mo on vendor site). Peer to BuildZoom/Shovels; not BPS/SOCDS aggregates. |
 | [WCRER permits/completions](wcrer-permits.md) | UW WA toolkit: BPS permits + OFM completions | Mild — WA only | County/place Excel; completions add-on; not national/parcel. |
 | [FRED housing;permits](fred-housing-permits.md) | ~4k FRED series (Census BPS redistributed) | Mild | Easy state/MSA monthly API; prefer BPS/SOCDS for place/county. |
+| [Deeds DIY vs plant](deeds-by-state.md) | Framing: county portals vs national plants | Yes as map | DIY for spot checks; plant for overlays; DC ROD + NYC ACRIS examples. |
+| [Property data vendors](property-data-vendors.md) | ATTOM + snowballed national peers | Yes — shortlist | DataTree/Cotality closest plants; BatchData/Regrid/Melissa self-serve-ish; USTR/AFX abstractor lane. |
+| [ATTOM](attom.md) | Assessor + recorder/deed plant; API + Databricks | Likely yes — quote/trial | Baseline ownership overlay vendor. |
+| [County recorder DIY](county-recorder-diy.md) | Portal pattern (often vendor-hosted) | Mild | No national bulk; use with deeds-by-state. |
+| [U.S. Title Records](us-title-records.md) | Per-report human title abstractor | Exception only | $29–275+/report; not a deed dump. |
 
 ## Backlog (not yet evaluated)
 
 Add a row (and optional `data-sources/<name>.md`) as each source gets a pass:
 
-- County deed / assessor feeds (vendor shortlist)
 - More states from Forbes list (FL, GA, CA SOS path, IL live URL)
 - Municipal list from Forbes companion (90 cities) + [NYC](nyc-open-data.md) / [Austin](austin-permits.md)
 - USPS NCOA (access + cost)
