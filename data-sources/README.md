@@ -9,7 +9,7 @@ Inventory of datasets / data products we might access for credit, market, overla
 | Public records / deeds | Verify homeownership; LLC + articles of incorp when name isn’t on title | [Deeds DIY vs plant](deeds-by-state.md); [property vendors vs ATTOM](property-data-vendors.md); [ATTOM](attom.md); [county recorder DIY](county-recorder-diy.md); [USTR abstractor](us-title-records.md) |
 | Housing & valuations | Collateral / housing-status signal; market stress | ACS, Zillow/FHFA indexes; GIS parcels ([Purdue GIS guide](purdue-gis-by-state.md)); [property-data-vendors.md](property-data-vendors.md) |
 | Building permits | Local activity, renovation, investor vs owner signals | [BuildZoom / Gryd](buildzoom.md); [SATT residential (Databricks)](satt-building-permits.md); Census BPS ([census.md](census.md) / [data.gov](data-gov.md)); [HUD SOCDS](hud-socds-permits.md); [FRED housing;permits](fred-housing-permits.md); [WCRER WA](wcrer-permits.md); [NYC Open Data](nyc-open-data.md) (DOB); [Austin permits](austin-permits.md); Shovels-class peers; other city portals |
-| Insurance | Disaster / flood / property risk overlays | OpenFEMA NFIP + disasters ([data.gov](data-gov.md)); NAIC / DOI; hazard vendors |
+| Insurance | Disaster / flood / property risk overlays | [OpenFEMA + NFHL DIY](insurance-flood.md); [data.gov](data-gov.md) finder; First Street / Cotality hazard (vendor) |
 | US companies / entities | Firm graph for LLC ownership, employers, merchants | [GovFiles](govfiles.md); [SOS bulk by state](sos-bulk-by-state.md); [CompanyData](companydata.md); OpenCorporates; SEC EDGAR |
 | USPS address changes | Fraud / instability (NCOA moves); FI address hygiene | [Address / USPS / Melissa](address-usps.md); NCOA<sup>Link</sup>/AIS licensed — no free dump |
 | Financial institutions | Banks, CUs, brokers — lists, branches, financials; txn string match | [US FI DIY](us-banks.md); [FI vendors](fi-data-vendors.md); [address hygiene](address-usps.md) |
@@ -53,6 +53,7 @@ Already in hand / partial: US location datasets for txn geo; mediocre bank/CU/br
 | [US FI DIY (us-banks.md)](us-banks.md) | Banks + CUs + brokers — federal/public stack | Yes | FDIC/NIC/SOD/CDR; NCUA 5300; FINRA firm list/API |
 | [FI data vendors](fi-data-vendors.md) | Commercial FI directories / branch APIs | Maybe | CREHQ, Accuity, S&P/Moody’s; DIY usually enough |
 | [Address / USPS / Melissa](address-usps.md) | Standardize/verify; NCOA licensed | Yes for hygiene | Melissa known path; no free USPS dump |
+| [Insurance / flood / hazard](insurance-flood.md) | OpenFEMA NFIP + disasters; NFHL FIRM GIS; NRI; light vendors | Yes — DIY stack | Parcel SFHA via NFHL; NFIP claims/policies tract/ZIP only; county disasters; property climate scores = vendor |
 
 ## Backlog (not yet evaluated)
 
@@ -62,4 +63,4 @@ Add a row (and optional `data-sources/<name>.md`) as each source gets a pass:
 - Municipal list from Forbes companion (90 cities) + [NYC](nyc-open-data.md) / [Austin](austin-permits.md)
 - OpenCorporates (vs GovFiles / DIY SOS bulk)
 - dv01 loan tapes
-- Pull primary URLs for BPS / OpenFEMA / HMDA / FHFA / IRS SOI ZIP into short notes
+- Pull primary URLs for BPS / HMDA / FHFA / IRS SOI ZIP into short notes

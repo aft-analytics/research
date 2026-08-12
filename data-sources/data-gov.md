@@ -7,7 +7,7 @@
 | Domain | On data.gov / linked agencies | Notes |
 |--------|-------------------------------|--------|
 | Building permits | Census **BPS** ([census.gov/permits](https://www.census.gov/permits)); HUD [SOCDS](hud-socds-permits.md) (BPS place/county/CBSA UI) | Place/county aggregates — not parcel permits |
-| Insurance / disaster | **OpenFEMA** NFIP redacted claims & policies; NFIP community status/CRS; disaster declarations | Strong for flood/disaster overlays |
+| Insurance / disaster | **OpenFEMA** NFIP redacted claims & policies; NFIP community status/CRS; disaster declarations; NFHL via FEMA MSC (not only catalog) | Strong — detail in [insurance-flood.md](insurance-flood.md) |
 | Mortgage / credit public | **HMDA** (CFPB); CRA analytics tables (Fed) | Loan-application grain (HMDA), not consumer bureau |
 | Housing prices | **FHFA HPI** | Metro/ZIP-ish indexes |
 | Local economy / mix | **ACS** / **BFS** / **CBP** — prefer [Census hub](census.md); **IRS SOI ZIP** | Spectrum / market overlays |
